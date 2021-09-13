@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        h1 {
+            color: blue;
+            font-family: sans-serif;
+        }
+        h2 {
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+        body {
+            background-color: rgb(165, 241, 50);
+        }
+        div {
+            background: #111 ;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+            border: rgb(36, 122, 235) solid 3px;
+            border-radius: 24px;
+            text-align: center;
+            outline: none;
+            transition: 0.5s;
+        }
+        input[type="submit"] {
+            width: 150px;
+            background-color: rgb(30, 105, 202);
+            color: #fff;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 700;
+            border: solid 3px #ccc;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        input[type="submit"]:hover {
+            background-color: #ccc;
+            border: rgb(30, 105, 202) 3px solid;
+            color: rgb(30, 105, 202);
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus{
+            width: 300px;
+            border: rgb(165, 241, 50) solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <div>
+        <form>
+            <h2>Feedback</h2>
+            <input type="text" name="username" placeholder="Username"> <br>
+            <input type="email" name="email" placeholder="Email Address"> <br>
+            <input type="tel" name="phone" placeholder="Phone Number"> <br>
+            <input type="hidden" name="FeedbackForm">
+            <textarea name="feedback" cols="30" rows="3" placeholder="This is my Feedback"></textarea> <br> 
+            Satisfaction: <input type="range" min="1" max="10"> <br>
+            Satisfaction: <input type="number" min="1" max="10"> <br>
+            <input type="date" name="issueDate"> <br> <br> 
+            <input type="time" name="isuueTime"> <br> 
+            <br> 
+            <input type="submit" value="Send Feedback">
+        </form>
+    </div>
+    <h2>Comments</h2>
+</body>
+</html>
